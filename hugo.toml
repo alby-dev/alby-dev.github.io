@@ -1,0 +1,76 @@
+baseurl = "http://www.example.com"
+title = "Alby DEV"
+theme = "hugo-coder"
+languagecode = "it"
+defaultcontentlanguage = "it"
+
+paginate = 20
+
+disqusShortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Alby DEV"
+  info = "Full Stack DevOps and Magician"
+  description = "John Doe's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/me.png"
+  #gravatar = "john.doe@example.com"
+
+  faviconSVG = "images/logo.png"
+  favicon_32 = "images/logo.png"
+  favicon_16 = "images/logo.png"
+
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/johndoe/"
+[[params.social]]
+  name = "Gitlab"
+  icon = "fa fa-gitlab fa-2x"
+  weight = 2
+  url = "https://gitlab.com/johndoe/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 3
+  url = "https://twitter.com/johndoe/"
+
+# Menu links
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  url  = "/"
+[[menu.main]]
+  name = "About"
+  weight = 3
+  url = "about/"
+[[menu.main]]
+  name = "Guide"
+  weight = 3
+  url  = "guide/"
+[[menu.main]]
+  name = "Blog"
+  weight = 4
+  url  = "blog/"
