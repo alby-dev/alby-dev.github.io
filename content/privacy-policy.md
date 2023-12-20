@@ -1,6 +1,6 @@
 +++
 title = "Privacy Policy"
-description = "Alby DEV Privacy e Cookies Policy
+description = "Alby DEV Privacy e Cookies Policy"
 date = "2019-02-28"
 aliases = ["privacy"]
 author = "Alby DEV"
