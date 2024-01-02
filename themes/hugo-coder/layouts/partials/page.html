@@ -7,7 +7,9 @@
       <div class="subtitle">
         {{ .Params.Subtitle }}
       </div>
+      {{ if .Params.hideMeta }}
 
+      {{ else }}
       <div class="post-meta" style="margin-top:15px">
         <div class="date">
           <span class="posted-on">
@@ -25,6 +27,7 @@
         {{ with .GetTerms "categories" }}{{ partial "taxonomy/categories.html" . }}{{ end }}
         {{ with .GetTerms "tags" }}{{ partial "taxonomy/tags.html" . }}{{ end }}
       </div>
+      {{ end }}
     </div>
   </header>
 

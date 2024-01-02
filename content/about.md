@@ -5,6 +5,7 @@ date = "2019-02-28"
 subtitle = "Freelance Web Developer, Open Source Enthusiasts, Montanaro"
 aliases = ["chi-sono", "contact", "about-me"]
 author = "Alby DEV"
+hideMeta = "true"
 +++
 
 Ciao! Benvenuto sul mio sito.
