@@ -1,81 +1,174 @@
-baseurl = "https://alby-dev.github.io/"
+######################## default configuration ####################
+# The base URL of your site (required). This will be prepended to all relative URLs.
+baseURL = "https://alby-dev.github.io/"
+# Title of your website (required).
 title = "Alby DEV"
-theme = "hugo-coder"
-languagecode = "it"
-defaultcontentlanguage = "it"
+# Your theme name
+#theme = "hugoplate"
+theme= ["hugoplate"]
+# theme= ["hugo-redirect", "hugoplate"]
+# Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
+timeZone = "Europe/Rome"
+# post pagination
+paginate = 12 # see https://gohugo.io/extras/pagination/
+# post excerpt
+summaryLength = 5 # see https://gohugo.io/content-management/excerpts/
+# google analytics
+googleAnalytics = "" # see https://gohugo.io/templates/internal/#configure-google-analytics
+# disqus short name
+disqusShortname = "" # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
+# disable language
+disableLanguages = [
+] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
+hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
-paginate = 20
 
-disqusShortname = "yourdiscussshortname"
+########################## Permalinks ############################
+[permalinks.page]
+"pages" = "/:slugorfilename/"
+
+
+############################# Modules ############################
+[module]
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "hugo_stats.json"
+target = "assets/watching/hugo_stats.json"
+
+############################# Build ##############################
+[build]
+noJSConfigInAssets = false
+useResourceCacheWhen = 'fallback'
+[build.buildStats]
+enable = true
+[[build.cachebusters]]
+source = 'assets/watching/hugo_stats\.json'
+target = 'style\.css'
+[[build.cachebusters]]
+source = '(postcss|tailwind)\.config\.js'
+target = 'css'
+[[build.cachebusters]]
+source = 'assets/.*\.(js|ts|jsx|tsx)'
+target = 'js'
+[[build.cachebusters]]
+source = 'assets/.*\.(css|scss|sass)'
+target = 'css'
+[[build.cachebusters]]
+source = 'data/.*\.(.*)$'
+target = 'css'
+[[build.cachebusters]]
+source = 'assets/.*\.(.*)$'
+target = '$1'
+
+
+############################# Outputs ############################
+[outputs]
+home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
+
+############################# Imaging ############################
+[imaging]
+# See https://github.com/disintegration/imaging
+# Default JPEG or WebP quality setting. Default is 75.
+quality = 90
+resampleFilter = "Lanczos"
+
+############################ Caches ##############################
+[caches]
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+
+############################ Markup ##############################
+[markup]
+[markup.goldmark.renderer]
+unsafe = true
 
 [markup.highlight]
-style = "github-dark"
+style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
 
-[params]
-  author = "Alby DEV"
-  info = "Full Stack DevOps and Magician"
-  description = "John Doe's personal website"
-  keywords = "blog,developer,personal"
-  avatarurl = "images/me.png"
-  #gravatar = "john.doe@example.com"
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 5
+ordered = true
 
-  faviconSVG = "images/logo.png"
-  favicon_32 = "images/logo.png"
-  favicon_16 = "images/logo.png"
 
-  since = 2019
+########################### Media types ###########################
+[mediaTypes]
+[mediaTypes."application/manifest+json"]
+suffixes = ["webmanifest"]
 
-  enableTwemoji = true
 
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
+########################### Output Format ##########################
+[outputFormats]
+[outputFormats.WebAppManifest]
+mediaType = "application/manifest+json"
+rel = "manifest"
 
-  # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "searchindex"
+isPlainText = true
+notAlternative = true
+
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/swiper/swiper-bundle.css"
+lazy = true
+[[params.plugins.css]]
+link = "plugins/glightbox/glightbox.css"
+lazy = true
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/brands.css"
+lazy = true
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/solid.css"
+lazy = true
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/icons.css"
+lazy = true
+
+# JS Plugins
+[[params.plugins.js]]
+link = "js/search.js"
+lazy = false
+[[params.plugins.js]]
+link = "plugins/swiper/swiper-bundle.js"
+lazy = false
+[[params.plugins.js]]
+link = "plugins/glightbox/glightbox.js"
+lazy = true
+[[params.plugins.js]]
+link = "js/gallery-slider.js"
+lazy = true
+[[params.plugins.js]]
+link = "js/accordion.js"
+lazy = true
+[[params.plugins.js]]
+link = "js/tab.js"
+lazy = true
+[[params.plugins.js]]
+link = "js/modal.js"
+lazy = true
+[[params.plugins.js]]
+link = "plugins/cookie.js"
+lazy = true
+[[params.plugins.js]]
+link = "plugins/youtube-lite.js"
+lazy = true
 
 [taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
-
-# Social links
-[[params.social]]
-  name = "Github"
-  icon = "fa fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/johndoe/"
-[[params.social]]
-  name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
-  weight = 2
-  url = "https://gitlab.com/johndoe/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa fa-twitter fa-2x"
-  weight = 3
-  url = "https://twitter.com/johndoe/"
-
-# Menu links
-[[menu.main]]
-  name = "Home"
-  weight = 1
-  url  = "/"
-[[menu.main]]
-  name = "About"
-  weight = 3
-  url = "about/"
-[[menu.main]]
-  name = "Guide"
-  weight = 3
-  url  = "guide/"
-[[menu.main]]
-  name = "Blog"
-  weight = 4
-  url  = "blog/"
-
-[sitemap]
-  changeFreq = ''
-  filename = 'sitemap.xml'
-  priority = -1
+  category = 'categories'
+  tag = 'tags'
+  argomenti = "argomenti"
+  raccolte = "raccolte"
