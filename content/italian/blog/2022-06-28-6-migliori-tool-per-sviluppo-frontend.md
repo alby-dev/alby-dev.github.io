@@ -18,9 +18,7 @@ Il codice utilizzato nella produzione è diverso dal codice di sviluppo. In pro
 
 In questo articolo potrai trovare raccolto i migliori strumenti di build che puoi utilizzare nello sviluppo frontend. Nota che tutti questi strumenti vengono eseguiti da riga di comando, quindi non sono dotati di un'interfaccia utente grafica.
 
-## 1. NPM (PACKAGE MANAGER) <figure class="wp-block-image size-full">
-
-<img loading="lazy" decoding="async" width="850" height="483" src="/wp-content/uploads/2022/06/npm.jpeg" alt="" class="wp-image-516" srcset="/wp-content/uploads/2022/06/npm.jpeg 850w, /wp-content/uploads/2022/06/npm-768x436.jpeg 768w" sizes="(max-width: 850px) 100vw, 850px" /> </figure>
+## 1. NPM (PACKAGE MANAGER)
 
 L'acronimo [npm][1] sta per Node Package Maid che è il gestore di pacchetti predefinito di Node.js. Quando [installi Node.js][2] sul tuo sistema, anche npm viene installato automaticamente e puoi accedervi dall'interfaccia da riga di comando. Con npm puoi installare qualsiasi pacchetto Node.js con un solo comando.
 
@@ -35,9 +33,7 @@ Puoi trovare tutti i pacchetti Node.js esistenti nel registro npm a cui puoi acc
   * Molteplici opzioni di configurazione (tramite riga di comando).
   * Ampia documentazione e utile community.
 
-## 2. YARN (PACKAGE MANAGER) <figure class="wp-block-image size-full">
-
-<img loading="lazy" decoding="async" width="850" height="484" src="/wp-content/uploads/2022/06/yarn.jpeg" alt="" class="wp-image-517" srcset="/wp-content/uploads/2022/06/yarn.jpeg 850w, /wp-content/uploads/2022/06/yarn-768x437.jpeg 768w" sizes="(max-width: 850px) 100vw, 850px" /> </figure>
+## 2. YARN (PACKAGE MANAGER)
 
 [Yarn][3] è un gestore di pacchetti frontend che può essere utilizzato come alternativa a npm. Poiché Yarn stesso è un pacchetto Node.js, devi installare Node.js prima di poter utilizzare Yarn sul tuo sistema. Quindi, devi solo seguire la [guida all'installazione][4] per utilizzarla per gestire le dipendenze del frontend.
 
@@ -52,10 +48,7 @@ Yarn velocizza il processo di compilazione memorizzando nella cache ogni pacchet
   * Tempi di _build_ rapidi.
   * Modalità offline.
 
-## 3. GRUNT (TASK RUNNER) <figure class="wp-block-image size-full">
-
-<img loading="lazy" decoding="async" width="850" height="491" src="/wp-content/uploads/2022/06/grunt.jpeg" alt="" class="wp-image-518" srcset="/wp-content/uploads/2022/06/grunt.jpeg 850w, /wp-content/uploads/2022/06/grunt-768x444.jpeg 768w" sizes="(max-width: 850px) 100vw, 850px" /> </figure>
-
+## 3. GRUNT (TASK RUNNER)
 [Grunt][5] è un task runner frontend che ti consente di automatizzare attività ripetitive come minimizzazione, linting, test e altro. I task runner sono diversi dai gestori di pacchetti, poiché non puoi usarli per gestire le dipendenze. Ne hai bisogno solo se desideri eseguire le stesse attività durante ogni processo di compilazione.
 
 Poiché Grunt è un pacchetto Node.js, puoi installarlo con npm, Yarn o un altro gestore di pacchetti Node.js. Grunt mantiene le dipendenze personalizzate necessarie per eseguire le attività predefinite nel file _package.json_ . Puoi definire le tue attività nel Gruntfile ([vedi un esempio][6]) che viene eseguito durante ogni processo di compilazione ed esegue automaticamente ogni attività che include.
@@ -69,9 +62,7 @@ Poiché Grunt è un pacchetto Node.js, puoi installarlo con npm, Yarn o un altro
   * Ampia documentazione.
   * Ampiamente adottato.
 
-### 4. GULP (TASK RUNNER) <figure class="wp-block-image size-full">
-
-<img loading="lazy" decoding="async" width="850" height="484" src="/wp-content/uploads/2022/06/gulp.jpeg" alt="" class="wp-image-519" srcset="/wp-content/uploads/2022/06/gulp.jpeg 850w, /wp-content/uploads/2022/06/gulp-768x437.jpeg 768w" sizes="(max-width: 850px) 100vw, 850px" /> </figure>
+### 4. GULP (TASK RUNNER)
 
 [Gulp][7] è un altro task runner automatizzato e anche il più forte concorrente di Grunt. Simile a Grunt, puoi utilizzare Gulp per automatizzare attività front-end ricorrenti come la preelaborazione CSS, l'ottimizzazione delle immagini e molti altri. È anche un pacchetto Node.js che puoi installare con i gestori di pacchetti npm e Yarn. Puoi definire le tue attività in [Gulpfile][8] e configurare le tue dipendenze relative alle tue attività nel file _package.json_ .
 
@@ -86,27 +77,22 @@ La più grande differenza rispetto a Grunt è che Gulp utilizza una tecnica di a
   * Documentazione facile da seguire.
   * Superficie API minima per una semplice adozione.
 
-## 5. BROWSERIFY (MODULE LOADER/BUNDLER) <figure class="wp-block-image size-full">
-
-<img loading="lazy" decoding="async" width="850" height="445" src="/wp-content/uploads/2022/06/browserify.jpeg" alt="" class="wp-image-520" srcset="/wp-content/uploads/2022/06/browserify.jpeg 850w, /wp-content/uploads/2022/06/browserify-768x402.jpeg 768w" sizes="(max-width: 850px) 100vw, 850px" /> </figure>
+## 5. BROWSERIFY (MODULE LOADER/BUNDLER)
 
 [Browserify][10] è un caricatore di moduli Node.js che ti consente di raggruppare le tue dipendenze front-end e caricarle come un unico file JavaScript nel browser dell'utente. I gestori di pacchetti come npm e Yarn caricano i moduli sul lato server utilizzando la funzione _[require()][11]_ di Node.js progettata per caricare i moduli. Browserify porta il metodo _require()_ sul lato client, il che può comportare un enorme aumento delle prestazioni.
 
-Con Browserify, il browser del tuo utente deve caricare un solo file JavaScript statico che contiene tutte le dipendenze su cui si basa il tuo progetto. Puoi aggiungere il tuo JavaScript in bundle come tag _<script>_ alla tua pagina e sei a posto. Tuttavia, tieni presente che poiché Browserify è un modulo Node.js e un'implementazione dell'API CommonJS (simile a npm), puoi utilizzarlo solo per caricare moduli Node.js ma non altri tipi di file JavaScript (o altri).
+Con Browserify, il browser del tuo utente deve caricare un solo file JavaScript statico che contiene tutte le dipendenze su cui si basa il tuo progetto. Puoi aggiungere il tuo JavaScript in bundle come tag script alla tua pagina e sei a posto. Tuttavia, tieni presente che poiché Browserify è un modulo Node.js e un'implementazione dell'API CommonJS (simile a npm), puoi utilizzarlo solo per caricare moduli Node.js ma non altri tipi di file JavaScript (o altri).
 
 **Caratteristiche principali:**
 
   * Raggruppa tutte le dipendenze di Node.js in un unico file.
   * Velocizza le applicazioni modulari che si basano su più moduli Node.js.
-  * Consente requisiti esterni (è possibile richiedere moduli da altri tag _<script>_ ).
+  * Consente requisiti esterni (è possibile richiedere moduli da altri tag script ).
   * Consente di dividere i pacchetti, se necessario.
   * Esclude, ignora e trasforma le funzionalità.
   * Documentazione dettagliata e utile [manuale di Browserify][12] .
 
-## 6. WEBPACK (MODULE LOADER/BUNDLER) <figure class="wp-block-image size-full">
-
-<img loading="lazy" decoding="async" width="850" height="485" src="/wp-content/uploads/2022/06/webpack.jpeg" alt="" class="wp-image-521" srcset="/wp-content/uploads/2022/06/webpack.jpeg 850w, /wp-content/uploads/2022/06/webpack-768x438.jpeg 768w" sizes="(max-width: 850px) 100vw, 850px" /> </figure>
-
+## 6. WEBPACK (MODULE LOADER/BUNDLER)
 [Webpack][13] è un bundler di moduli avanzato che ti consente di raggruppare tutte le tue dipendenze e caricarle come risorse statiche nel browser dell'utente. Mentre Browserify raggruppa solo i moduli Node.js, Webpack può gestire qualsiasi tipo di file front-end come file _.html_ , _.css, .js, .scss_ , immagini e altre risorse.
 
 Oltre ai moduli CommonJS utilizzati nell'ecosistema Node.js, Webpack può anche raggruppare moduli [ECMAScript][14] e [AMD][15] nativi (altre specifiche del modulo JavaScript). Webpack analizza il tuo progetto e crea un grafico delle dipendenze. Quindi, in base al grafico delle dipendenze, raggruppa i tuoi file e moduli in uno o più file statici che puoi aggiungere alla tua pagina HTML.

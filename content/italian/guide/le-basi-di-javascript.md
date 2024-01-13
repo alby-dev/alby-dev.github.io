@@ -30,11 +30,11 @@ Come per il codice CSS, anche il Javascript può essere inserit in **modi diver
 
 ### Codice Javascript interno
 
-In questo caso il codice Javascript è inserito **direttamente nel file html** prima del fine body (</body>), fra i tag _**<script>**_ e **</script>.**
+In questo caso il codice Javascript è inserito **direttamente nel file html** prima del fine body (</body>).
 
 **Esempio:**
 
-Apriamo il nostro “**index.html**“, andiamo sul fondo e inseriamo questo codice appena prima del tag _**</body>**_:
+Apriamo il nostro “**index.html**“, andiamo sul fondo e inseriamo questo codice appena prima del tag _**</body>:
 
 ```
 <script>
