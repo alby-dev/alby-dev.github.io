@@ -7,7 +7,7 @@
     <div class="row justify-center">
       <div class="lg:col-8">
         <h1 class="mb-4">
-          Ciao sono Alberto!
+          Ciao sono Alby!
         </h1>
         <p class="mb-8">
           Benvenuto nel mio giardino digitale 🌱.
@@ -150,18 +150,18 @@
         <div class="row mb-14">
           {{ range first 10 ( where .Site.RegularPages "Type" "guide" ) }}
           <div class="md:col-12 ">
-            <div class="row single-guida">
-              <div class="md:col-2 text-right">
+            <div class="row single-guida mb-3">
+              <div class="md:col-2 text-left md:text-right">
                 <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "2/01/2006" ) }}</span>
               </div>
               <div class="md:col-6">
-                <h2 class="mb-3">
+                <h2 class="">
                   <a href="{{ .RelPermalink }}">
                     {{ .Title }}
                   </a>
                 </h2>
               </div>
-              <div class="md:col-4 text-right">
+              <div class="md:col-4 text-left md:text-right">
                 {{ $argomenti:= .Params.argomenti }}
                 {{ range $i,$p:= $argomenti }}
                 <a href="{{ `argomenti/` | relLangURL }}{{ . | urlize | lower }}/" class="ms-1 uppercase">
