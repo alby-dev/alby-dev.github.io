@@ -21,11 +21,10 @@
         </p>
         {{ with .button }}
         {{ if .enable }}
-        <button class="btn btn-primary"
-          onclick="window.scrollTo({ top: document.getElementById('scopri').offsetTop - 70, behavior: 'smooth'});">
+        <a class="btn btn-primary" href="/about" title="About">
           {{ .label }}
           <i class="fa fa-arrow-right pl-2"></i>
-        </button>
+        </a>
         {{ end }}
         {{ end }}
       </div>
