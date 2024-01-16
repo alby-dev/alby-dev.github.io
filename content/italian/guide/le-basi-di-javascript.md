@@ -1,6 +1,8 @@
 ---
 title: "3. Le basi di Javascript"
 date: "2020-03-17"
+argomenti:
+  - Inizia Qui
 ---
 
 **Javascript** è il linguaggio che permette di **creare animazioni** nei contenuti web. Tutte le gallery, gli slider, i pop up, le transizioni di pagina e ogni effetto animato che vedi navigando online è realizzato con **Javascript**.

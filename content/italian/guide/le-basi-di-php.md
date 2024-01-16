@@ -1,6 +1,8 @@
 ---
 title: "6. Le basi di PHP"
 date: "2020-03-17"
+argomenti:
+  - Inizia Qui
 ---
 
 **PHP** è uno dei linguaggi di programmazione **più utilizzati al mondo** in ambito web.

@@ -1,6 +1,8 @@
 ---
 title: "1. Le basi dell'HTML"
 date: "2020-03-17"
+argomenti:
+  - Inizia Qui
 ---
 
 **L’HTML è la base del web**, c’è dappertutto! Ogni pagina internet che visualizzi ha del codice HTML al suo interno. Se vuoi diventare uno sviluppatore web quindi la prima cosa da fare è un corso intensivo di HTML!

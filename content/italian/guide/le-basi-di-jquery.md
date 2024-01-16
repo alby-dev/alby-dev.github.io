@@ -1,6 +1,8 @@
 ---
 title: "5. Le basi di jQuery"
 date: "2020-03-17"
+argomenti:
+  - Inizia Qui
 ---
 
 Se hai letto le nostre [guide precedenti](/guide), ormai saprai bene che **HTML**, **CSS** e **Javascript** sono i tre **linguaggi fondamentali** del web.

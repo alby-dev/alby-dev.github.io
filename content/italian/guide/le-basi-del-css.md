@@ -1,6 +1,8 @@
 ---
 title: "2. Le basi del CSS"
 date: "2020-03-17"
+argomenti:
+  - Inizia Qui
 ---
 
 Il CSS è il linguaggio di **formattazione** del web. Sta per _Cascading Style Sheets_ ed è utilizzato per **assegnare uno stile alle pagine html**.
