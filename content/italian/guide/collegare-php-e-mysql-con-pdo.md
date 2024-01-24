@@ -2,6 +2,7 @@
 title: "Collegare PHP e MySQL con PDO"
 date: "2021-06-30"
 author: "Alby DEV"
+redirect_to: "https://albertoreineri.it/blog/collegare-php-e-mysql-con-pdo"
 argomenti:
   - PHP
 ---

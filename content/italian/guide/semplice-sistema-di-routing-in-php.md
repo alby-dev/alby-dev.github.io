@@ -1,6 +1,7 @@
 ---
 title: "Semplice sistema di routing in PHP"
 date: "2021-06-04"
+redirect_to: "https://albertoreineri.it/blog/nano-editor-guida-per-principianti"
 argomenti:
   - PHP
 ---

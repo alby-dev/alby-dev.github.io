@@ -1,6 +1,7 @@
 ---
 title: "3. Le basi di Javascript"
 date: "2020-03-17"
+redirect_to: "https://albertoreineri.it/blog/le-basi-di-javascript"
 argomenti:
   - Inizia Qui
 ---

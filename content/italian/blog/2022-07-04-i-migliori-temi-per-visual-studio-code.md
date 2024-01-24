@@ -3,6 +3,8 @@ title: I migliori temi per Visual Studio Code
 author: Alby DEV
 type: post
 date: 2022-07-04T21:26:57+00:00
+redirect_to: "https://albertoreineri.it/blog/i-migliori-temi-per-visual-studio-code"
+
 categories:
 
   - Web Dev

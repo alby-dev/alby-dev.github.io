@@ -3,6 +3,7 @@ title: 8 consigli sulla produttività per sviluppatori e programmatori
 author: Alby DEV
 type: post
 date: 2022-07-22T07:42:48+00:00
+redirect_to: "https://albertoreineri.it/blog/8-consigli-sulla-produttività-per-sviluppatori-e-programmatori/"
 categories:
 
   - Web Dev

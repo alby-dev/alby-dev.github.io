@@ -1,6 +1,7 @@
 ---
 title: "Semplice Backend Login in Core PHP"
 date: "2021-05-31"
+redirect_to: "https://albertoreineri.it/blog/semplice-backend-login-in-core-php"
 argomenti:
   - PHP
 ---

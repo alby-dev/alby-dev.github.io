@@ -1,6 +1,7 @@
 ---
 title: "Laravel in locale su Local by Flywheel"
 date: "2021-07-02"
+redirect_to: "https://albertoreineri.it/blog/laravel-in-locale-su-local-by-flywheel"
 argomenti:
   - PHP
 ---

@@ -1,6 +1,7 @@
 ---
 title: "1. Creare un tema WordPress da zero – Parte 1"
 date: "2020-04-30"
+redirect_to: "https://albertoreineri.it/blog/creare-un-tema-wordpress-da-zero-parte-1"
 argomenti:
   - WordPress DEV
 ---

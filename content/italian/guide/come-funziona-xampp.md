@@ -1,6 +1,7 @@
 ---
 title: "3. Come funziona XAMPP"
 date: "2020-03-20"
+redirect_to: "https://albertoreineri.it/blog/come-funziona-xampp"
 argomenti:
   - WordPress Base
 ---

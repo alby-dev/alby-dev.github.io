@@ -1,6 +1,7 @@
 ---
 title: "Nascondere l’estensione alla fine dell’URL"
 date: "2019-12-19"
+redirect_to: "https://albertoreineri.it/blog/nascondere-lestensione-alla-fine-dellurl"
 argomenti:
   - Sviluppo Web
 ---

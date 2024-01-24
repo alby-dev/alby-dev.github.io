@@ -1,6 +1,7 @@
 ---
 title: "Come creare un effetto Overlay in CSS"
 date: "2022-02-22"
+redirect_to: "https://albertoreineri.it/blog/come-creare-un-effetto-overlay-in-css"
 argomenti:
   - Sviluppo Web
 ---

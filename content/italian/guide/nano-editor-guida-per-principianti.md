@@ -1,6 +1,7 @@
 ---
 title: "Nano Editor, Guida per principianti"
 date: "2022-06-27"
+redirect_to: "https://albertoreineri.it/blog/nano-editor-guida-per-principianti"
 argomenti:
   - Linux
 ---

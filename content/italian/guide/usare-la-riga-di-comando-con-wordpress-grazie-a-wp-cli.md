@@ -1,6 +1,7 @@
 ---
 title: "Usare la riga di comando con WordPress grazie a WP-CLI"
 date: "2022-06-27"
+redirect_to: "https://albertoreineri.it/blog/usare-la-riga-di-comando-con-wordpress-grazie-a-wp-cli"
 argomenti:
   - WordPress DEV
 ---

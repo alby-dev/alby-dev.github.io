@@ -1,6 +1,7 @@
 ---
 title: "Come installare una LAMP stack (Linux, Apache, MySQL, PHP) su Ubuntu"
 date: "2022-06-20"
+redirect_to: "https://albertoreineri.it/blog/come-installare-una-lamp-stack-linux-apache-mysql-php-su-ubuntu/"
 argomenti:
   - Linux
 
