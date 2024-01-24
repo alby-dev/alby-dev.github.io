@@ -5,6 +5,7 @@ argomenti:
   - WordPress Base
 ---
 
+
 Hai letto l’articolo sulla [configurazione del PC per lo sviluppo web](/guide/configurare-il-pc-per-sviluppare-in-wordpress%ef%bf%bc/), hai installato tutti i programmi e sei pronto ad iniziare a sviluppare!
 
 ## MA COME FUNZIONA XAMPP?
