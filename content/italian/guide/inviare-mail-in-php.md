@@ -1,6 +1,7 @@
 ---
 title: "Inviare Mail in PHP"
 date: "2023-04-18"
+redirect_to: "https://albertoreineri.it/blog/inviare-mail-in-php"
 argomenti:
   - PHP
 ---

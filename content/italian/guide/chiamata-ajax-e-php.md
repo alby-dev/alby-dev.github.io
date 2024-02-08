@@ -4,6 +4,7 @@ meta_title: "Chiamata AJAX e PHP"
 description: "Scopri come effettuare una chiamata AJAX in PHP"
 date: "2023-04-25"
 author: "Alby DEV"
+redirect_to: "https://albertoreineri.it/blog/chiamata-ajax-e-php"
 argomenti:
   - PHP
 ---
